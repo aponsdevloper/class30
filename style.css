@@ -1,0 +1,462 @@
+
+body,p,span{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,a{
+    font-family: 'Rubik', sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+.graybg{
+    background: #f9fafb;
+    padding: 100px 0px;
+}
+
+
+body .btn-primary{
+    color: #fff;
+    background:#e73a3e !important;
+    padding: 12px 40px;
+    border-color: #e73a3e;
+    font-weight: 500;
+    position: relative;
+    z-index: 1;
+}
+
+.body .btn-primary:hover{
+    border-color: #111;
+}
+
+body .btn-primary::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #111;
+    border-color: #111;
+    z-index: -1;
+    transition: .4s;
+}
+
+body .btn-primary:hover::after{
+    width: 100%;
+}
+
+.main-header .container-fluid,
+.banner-part .container-fluid{
+    max-width: 1440px;
+}
+
+
+/* header css start*/
+
+
+
+ul.header-menu{}
+ul.header-menu li .active{
+    color: #e73a3e;
+}
+ul.header-menu li a{
+    display: inline;
+    color: #111;
+    padding: 10px 16px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 500;
+    transition: .4s;
+}
+
+
+ul.header-menu li a i{
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+ul.header-menu li a:hover{
+    color: #e73a3e;
+}
+
+/*dropdown menu*/
+ul.header-menu ul{}
+ul.header-menu li{
+    position: relative;
+}
+ul.header-menu li ul{
+    margin-top: 20px;
+    position: absolute;
+    top: 200%;
+    left: 0;
+    width: 250px;
+    
+    padding-left: 0;
+    list-style: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s ease-in-out;
+    border-radius: 5px;
+    box-shadow: 2px 2px 16px 0 rgb(211, 206, 206);
+}
+
+ul.header-menu li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+}
+
+ul.header-menu li ul li{
+    padding: 10px;
+}
+ul.header-menu ul li a{}
+ul.header-menu ul li a:hover{}
+
+
+
+
+.header-search{
+    width: 50px;
+    font-size: 23px;
+    text-align: center;
+    margin-right: 20px;
+    font-weight: 900;
+    border-right: 1px solid rgb(71, 63, 63);
+}
+.header-search span{
+    
+}
+.header-call{
+    width: 230px;
+}
+.header-call-icon{
+    font-size: 40px;
+    color: #e73a3e;
+}
+.header-call-icon span{}
+
+.header-call-info{}
+.header-call-info h3{
+    font-size: 15px;
+    color: rgb(94, 90, 90);
+    padding-top: 5px;
+}
+.header-call-info a{
+    color: #111;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.header-button{}
+.header-button a{
+    
+}
+
+/* banner css start*/
+
+.banner-part{
+    background: url(https://templates.envytheme.com/finix/default/assets/img/main-banner2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.banner-content-wrap{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+} 
+ 
+
+
+
+.banner-social{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.banner-social ul{
+    list-style: none;
+    padding-left: 0;
+}
+.banner-social ul li{}
+.banner-social ul li span{
+    position: relative;
+    margin-right: 40px;
+    display: inline-block;
+}
+.banner-social ul li span::after{
+    position: absolute;
+    content: "";
+    top: 50%;
+    right: -40px;
+    background: #000;
+    width: 30px;
+    height: .5px;
+    
+    
+}
+.banner-social ul li a{
+    padding: 0 15px;
+    color: #111;
+    font-size: 18px;
+    display: inline-block;
+    transition: .3s;
+}
+.banner-social ul li a:hover{
+    color: #e73a3e;
+}
+
+
+.banner-content{}
+.banner-content h5{
+    color: #e73a3e;
+    padding-bottom: 10px;
+}
+.banner-content h2{
+    font-size: 60px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.banner-content p{
+   
+    font-size: 18px;
+    color: #777;
+}
+.banner-content a{
+    margin-top: 20px;
+}
+
+
+
+
+
+/* about css start*/
+
+.about-part{
+    padding: 100px 0px;
+    border-bottom: .5px solid rgb(219, 206, 206);
+    
+}
+.client-logo{
+   
+}
+.client-logo ul{
+    list-style: none;
+    padding-left: 0;
+}
+.client-logo ul li{}
+.client-logo ul li a{}
+
+
+.about-content{
+    padding: 100px 0px;
+}
+
+.about-image{
+    position: relative;
+}
+.about-img-text{
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+    background: url(https://templates.envytheme.com/finix/default/assets/img/about/shape.png);
+    height: 200px;
+    width: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.about-img-text h3{
+    color: #e73a3e;
+    font-size: 80px;
+}
+.about-img-text p{
+    color: #111;
+    font-weight: 600;
+}
+
+.about-right-text{}
+
+.finix-text{}
+.finix-text h6{
+    color: #e73a3e;
+    font-weight: 400;
+}
+.finix-text h2{
+    font-size: 37px;
+    font-weight: 400;
+    padding: 10px 0px;
+}
+.finix-text p{
+    color: #777;
+    font-size: 17px;
+}
+.finix-text strong{
+    font-size: 20px;
+    color: #777;
+   display: inline-block;
+   padding-bottom: 10px;
+   font-weight: 400;
+}
+.finix-text ul{
+    list-style: none;
+    padding-left: 0;
+}
+.finix-text ul li{
+    padding: 10px 0px;
+    color: #777;
+}
+
+.finix-text ul li::before{
+    content: "\f00c";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 600;
+    margin-right: 15px;
+    color: #e73a3e;
+    display: inline-block;
+}
+
+
+.finix-text ul li i{
+   /*  color: #e73a3e;
+    padding-right: 15px;
+    font-size: 20px; */
+}
+/* about css end*/
+
+/* why-choose-us css start*/
+
+.why-choose-us{}
+
+
+.why-choose-text{}
+
+.finix-text{
+    position: relative;
+}
+.play-animated-button{
+    width: 90px;
+    height: 90px;
+    background: #fff;
+    display: inline-block;
+    font-size: 60px;
+    color: #e73a3e;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 90px;
+    right: 40%;
+    bottom: 8%;
+    position: absolute;
+}
+
+.play-animated-button::after{
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    background: #e73a3e;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    animation: playbtn 1.5s ease-out infinite;
+    
+}
+
+
+@keyframes playbtn{
+    0%,30%{
+        transform: scale(0);
+        opacity: 1;
+    }
+    50%{
+        transform: scale(1.5);
+        opacity: .7;
+    }
+    100%{
+        transform: scale(2);
+        opacity: 0;
+    }
+
+}
+
+
+
+.features-item{
+    background: #fff;
+    padding: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    transition: .4s;
+}
+
+.features-item:hover{
+    transform: translateY(-12px);
+}
+.features-item::before{
+    position: absolute;
+    content: "";
+    top: -180px;
+    right: 0;
+    left: 0;
+    background: #fdebeb;
+    width: 95%;
+    height: 95%;
+    border-radius: 50%;
+    margin: 0 auto;
+    
+}
+
+.features-item-info h3{
+    font-size: 25px;
+    font-weight: 400;
+  
+
+    
+}
+.features-item-info p{
+   color: #767676;
+   font-size: 17px;
+    
+}
+.ft-icon i{
+    background: #fff;
+    font-size: 50px;
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    border-radius: 50%;
+    color: #e73a3e;
+    transition: .3s;
+    position: relative;
+}
+.features-item:hover .ft-icon i{
+    background: #e73a3e;
+    color: #fff;
+}
+
+.mb10{
+    margin-top: -25px;
+}
+
+
+
+/* why-choose-us css end*/
+
+
+
+/* header css start*/
+
+
+/* header css end*/
